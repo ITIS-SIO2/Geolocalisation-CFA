@@ -1,42 +1,90 @@
-#cadre_titre_entp {
-    width:230px; /* longueur du cadre */
-    margin:0 auto;
-    padding:6px;
-    text-align : center; /* alignement du texte dans le cadre */
-    font-family: "Trebuchet MS"; /* police du texte */
-    color: #d3cbc5; /* couleur du texte */
-    background:#ed6122; /* couleur de fond du cadre */
-    border:1px solid #DDD;
-}
-
-#cadre_empl_bouton {
-    width:230px;
-    height: 120px;
-    margin:0 auto;
-    padding:6px;
-    background:#d3cbc5;
-    border:1px solid #DDD;
-}
-
-.bouton dep_offre {
-    position: relative;
-    top:40px;
-    font-weight : 700;
-    display: block;
+.depose-offre-container{
+    background-color: #cccdcf;
+    width: 700px;
+    height: 600px;
     margin: auto;
-    line-height: 30px;
-    font-family: "Arial Narrow";
-    font-size : 14px;
-    border-radius: 25px;
-    width: 120px;
-    background:#ea7d42;
-    color: #27256b;
-    height: 30px ;
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
     text-align: center;
-    cursor:pointer;
+}
+.depose-offre-header{
+    width: 100%;
+    height: 50px;
+    background: url("image/depose_offre_header.png");
+    text-align: center;
+    line-height: 50px;
+    font-family: arial;
+    font-size: 20px;
+    font-weight:bold;
+    color:#e2e9eb;
 }
 
-.bouton dep_offre:hover {
-    background:#ea9648;
+.depose-offre-content{
+    /*height: 100px;*/
+    /*margin: 0px 50px;*/
+
+    border: 1px solid red;
+    display: inline-block;
 }
+
+.depose-offre-container p{
+    padding: 0;
+    margin: 0;
+    width: 250px;
+}
+
+.depose-offre-content-left{
+    border: 1px solid green;
+    text-align: left;
+    width: 350px;
+    float: left;
+    font-family: arial, verdana, sans-serif;
+    font-size: small;
+    font-weight:bold;
+    color: #27256b ;
+}
+
+.depose-offre-content-right{
+    border: 1px solid green;
+    text-align: left;
+    width: 250px;
+    float: right;
+    font-family: arial, verdana, sans-serif;
+    font-size: small;
+    font-weight:bold;
+    color: #27256b ;
+
+}
+
+.depose-offre-content-down{
+    /*text-align: left;*/
+    padding-left: 45px;
+    padding-right: 45px;
+    border: 1px solid green;
+    clear: both;
+}
+
+.title-depose-offre-content-down p{
+    /*margin-top: 50px;*/
+    text-align: center;
+    padding-left: 45px;
+    padding-right: 45px;
+    clear: both;
+    /*margin-outside: 30px;*/
+    border: 1px solid green;
+    text-align:right;
+    /*width: auto;*/
+    /*margin: auto;*/
+    width: 185px;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    font-family: arial, verdana, sans-serif;
+    font-size: small;
+    font-weight:bold;
+    color: #27256b ;
+
+}
+
 
