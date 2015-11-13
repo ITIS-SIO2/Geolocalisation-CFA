@@ -1,0 +1,40 @@
+/* line 31, ../sass/_base.scss */
+html, body {
+  background-color: #a7a9ab;
+}
+
+/* line 3, ../sass/screen.scss */
+.main-header {
+  height: 100px;
+  position: relative;
+  background-color: #a7a9ab;
+}
+/* line 7, ../sass/screen.scss */
+.main-header .logo {
+  height: 100px;
+  width: 400px;
+}
+/* line 11, ../sass/screen.scss */
+.main-header .lien-blog {
+  color: #27246a;
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+  text-decoration: underline;
+  font-size: 17px;
+}
+
+/* line 22, ../sass/screen.scss */
+.main-content {
+  height: 700px;
+  background: url("../../../images/MGB.JPG") no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+/* line 30, ../sass/screen.scss */
+.main-footer {
+  height: 100px;
+  background-color: #a7a9ab;
+}

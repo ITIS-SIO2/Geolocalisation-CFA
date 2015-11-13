@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}BTP CFA - Brétigny sur orge{% endblock %}</title>
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/base/stylesheets/screen.css') }}">
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+
+        <div class="container-fluid">
+
+            <header class="main-header row">
+                <img src="{{ asset('images/logo.jpg') }}" alt="BTP CFA - Brétigny sur orge" class="logo">
+                <a href="#" class="lien-blog">Retour vers le blog</a>
+            </header>
+
+            <div class="main-content row">
+                {% block mainContent %}{% endblock %}
+            </div>
+
+            <footer class="main-footer row">
+
+            </footer>
+
+        </div>
+
+        {% block javascripts %}
+
+        {% endblock %}
+
+    </body>
+</html>

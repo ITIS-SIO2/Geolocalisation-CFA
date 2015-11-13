@@ -1,0 +1,33 @@
+@import "base.scss";
+
+.main-header {
+  height: 100px;
+  position: relative;
+  background-color: $gray;
+  .logo {
+    height: 100px;
+    width: 400px;
+  }
+  .lien-blog {
+    color: $blue;
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    //font-weight: 600;
+    text-decoration: underline;
+    font-size: $fs+2;
+  }
+}
+
+.main-content {
+  height: 700px;
+  background: url("../../../images/MGB.JPG") no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+.main-footer {
+  height: 100px;
+  background-color: $gray;
+}

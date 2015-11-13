@@ -1,0 +1,64 @@
+{% extends "base.html.twig" %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/accueil/stylesheets/screen.css') }}">
+{% endblock %}
+
+{% block mainContent %}
+
+    <div class="section-container">
+
+        <section class="partenaires">
+            <h1>Partenaires</h1>
+            <form action="#" method="post">
+                <div class="siret">
+                    <p><label for="siret">Siret :</label></p>
+                    <p><input type="text" id="siret" name="siret" placeholder="Entrer votre n° de siret"></p>
+                </div>
+                <div class="pwd-partenaires">
+                    <p><label for="pwd-partenaires">Mot de passe :</label></p>
+                    <p><input type="text" id="pwd-partenaires" name="pwd-partenaires" placeholder="Entrer votre mot de passe"></p>
+                    <a href="#" class="pass-oublie">Mot de passe oublié</a>
+                </div>
+                <div class="submit-btn-div">
+                    <input type="submit" value="Connexion" class="submit-btn submit-btn-partenaires">
+                </div>
+                <div class="inscription-div">
+                    <a href="#">Devenir partenaire</a>
+                </div>
+            </form>
+        </section>
+
+        <section class="entreprises">
+            <h1>Entreprises</h1>
+            <div class="submit-btn-div">
+                <a href="#" class="submit-btn submit-btn-entreprises">Déposer une offre</a>
+            </div>
+        </section>
+
+        <section class="jeunes">
+            <h1>Jeunes</h1>
+            <form action="#" method="post">
+                <div class="login">
+                    <p><label for="login">Login :</label></p>
+                    <p><input type="text" id="login" name="login" placeholder="Entrer votre login"></p>
+                </div>
+                <div class="pwd-jeunes">
+                    <p><label for="pwd-jeunes">Mot de passe :</label></p>
+                    <p><input type="text" id="pwd-jeunes" name="pwd-jeunes" placeholder="Entrer votre mot de passe"></p>
+                    <a href="#" class="pass-oublie">Mot de passe oublié</a>
+                </div>
+                <div class="submit-btn-div">
+                    <input type="submit" value="Connexion" class="submit-btn submit-btn-jeunes">
+                </div>
+                <div class="inscription-div">
+                    <a href="#">S'inscrire</a>
+                </div>
+            </form>
+        </section>
+
+    </div>
+
+{% endblock %}
+

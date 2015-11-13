@@ -1,0 +1,42 @@
+#cadre_titre_entp {
+    width:230px; /* longueur du cadre */
+    margin:0 auto;
+    padding:6px;
+    text-align : center; /* alignement du texte dans le cadre */
+    font-family: "Trebuchet MS"; /* police du texte */
+    color: #d3cbc5; /* couleur du texte */
+    background:#ed6122; /* couleur de fond du cadre */
+    border:1px solid #DDD;
+}
+
+#cadre_empl_bouton {
+    width:230px;
+    height: 120px;
+    margin:0 auto;
+    padding:6px;
+    background:#d3cbc5;
+    border:1px solid #DDD;
+}
+
+.bouton dep_offre {
+    position: relative;
+    top:40px;
+    font-weight : 700;
+    display: block;
+    margin: auto;
+    line-height: 30px;
+    font-family: "Arial Narrow";
+    font-size : 14px;
+    border-radius: 25px;
+    width: 120px;
+    background:#ea7d42;
+    color: #27256b;
+    height: 30px ;
+    text-align: center;
+    cursor:pointer;
+}
+
+.bouton dep_offre:hover {
+    background:#ea9648;
+}
+
