@@ -1,10 +1,6 @@
 <?php
 
 
-//use Symfony\Component\HttpFoundation\Request;
-namespace Core\RequestBundle\Request;
-
-
 class PDOConnect
 {
     private $server;
