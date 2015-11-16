@@ -1,0 +1,64 @@
+.jeune /* Section */
+{
+    background-color: #cccdcf;
+    width: 300px;
+    margin: 0 auto;
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+}
+.jeune-header /* Autour du titre */
+{
+    width: 300px;
+    height: 50px;
+    background-color: #148850;
+    text-align: center;
+    line-height: 50px;
+    font-family: arial;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-top: 0%;
+}
+h1 /* Titre */
+{
+    color: #d3d4d4;
+    text-align: center;
+}
+
+
+.block_gauche /* Partie gauche des zones de saisie */
+{
+    margin-left: 10px;
+	width :100%;
+    display: inline-block;
+    line-height: 0px;
+    border: groove transparent;	
+    text-align: left;
+}
+
+
+.bouton_envoi /* Bouton envoyer */
+{
+    text-align: center;
+    border: groove transparent;
+    width: 150px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+p
+{
+    color: #4f4a7d;
+    font-family: arial, verdana, sans-serif;
+    font-size: small;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
