@@ -1,0 +1,125 @@
+/* line 43, ../../../sass/_base.scss */
+html, body {
+  background-color: #a7a9ab;
+}
+
+/* line 5, ../sass/screen.scss */
+section.partenaires {
+  width: 900px;
+  margin: 60px auto;
+  padding-bottom: 40px;
+  cursor: default;
+  background-color: #a7a9ab;
+  -webkit-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+}
+/* line 16, ../sass/screen.scss */
+section.partenaires h1 {
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  color: #d3d4d4;
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  background-image: linear-gradient(#7084bc, #030798);
+}
+/* line 18, ../sass/screen.scss */
+section.partenaires form {
+  margin: 0px 70px;
+}
+/* line 21, ../sass/screen.scss */
+section.partenaires form section {
+  width: 350px;
+  height: 455px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+/* line 27, ../sass/screen.scss */
+section.partenaires form section * {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+/* line 28, ../sass/screen.scss */
+section.partenaires form section p {
+  margin-top: 20px;
+}
+/* line 29, ../sass/screen.scss */
+section.partenaires form section fieldset {
+  height: 100%;
+  padding: 20px 20px 20px 20px;
+  position: relative;
+  border: 5px solid #939598;
+}
+/* line 34, ../sass/screen.scss */
+section.partenaires form section fieldset legend {
+  margin: -40px 0 10px 0;
+  height: 35px;
+  line-height: 35px;
+  display: block;
+  position: absolute;
+  width: auto;
+  left: 85px;
+  right: 85px;
+  color: #27246a;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #939598;
+  border: 0px;
+  font-weight: bold;
+  font-size: 18px;
+}
+/* line 56, ../sass/screen.scss */
+section.partenaires form .vous {
+  float: left;
+}
+/* line 57, ../sass/screen.scss */
+section.partenaires form .structure {
+  float: right;
+}
+/* line 58, ../sass/screen.scss */
+section.partenaires form .identifiants {
+  clear: both;
+  width: auto;
+  height: auto;
+  margin-top: 40px;
+}
+/* line 63, ../sass/screen.scss */
+section.partenaires form .identifiants .numsiret {
+  width: 45%;
+  float: left;
+}
+/* line 67, ../sass/screen.scss */
+section.partenaires form .identifiants .mdp {
+  width: 45%;
+  float: right;
+}
+/* line 78, ../sass/screen.scss */
+section.partenaires form div.submit-btn-div {
+  text-align: center;
+}
+/* line 80, ../sass/screen.scss */
+section.partenaires form div.submit-btn-div .submit-btn-partenaires {
+  height: 45px;
+  width: 150px;
+  display: inline-block;
+  border: 0px;
+  outline: 0px;
+  font-weight: bolder;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  color: #27246a;
+  font-size: 15px;
+  line-height: 45px;
+  background-color: #5183bf;
+  text-decoration: none;
+}
+/* line 23, ../../../sass/_base.scss */
+section.partenaires form div.submit-btn-div .submit-btn-partenaires:hover {
+  color: #d3d4d4;
+  background-color: #274598;
+}

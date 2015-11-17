@@ -1,0 +1,87 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Nouveau partenaire{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/partenaires/devenir_partenaire/stylesheets/screen.css') }}">
+{% endblock %}
+
+{% block mainContent %}
+
+    <section class="partenaires">
+        <h1>Nouveau partenaire</h1>
+
+        <form action="#" method="post">
+
+            <section class="vous">
+                <fieldset>
+                    <legend>Vous</legend>
+                    <p>
+                        <label for="nom">Nom : </label>
+                        <input type="text" id="nom" placeholder="Entrer votre nom" name="nom"/>
+                    </p>
+                    <p>
+                        <label for="prenom">Prénom : </label>
+                        <input type="text" id="prenom" placeholder="Entrer votre prénom" name="prenom"/>
+                    </p>
+                    <p>
+                        <label for="fonction">Fonction: </label>
+                        <input type="text" id="fonction" placeholder="Entrer votre fonction" name="fonction"/>
+                    </p>
+                </fieldset>
+            </section>
+
+            <section class="structure">
+                <fieldset>
+                    <legend>Structure</legend>
+                    <p>
+                        <label for="nom1"> Raison Social: </label>
+                        <input type="text" id="nom1" placeholder="Entrer le nom de votre structure" name="raison"/>
+                    </p>
+                    <p>
+                        <label for="adresse"> Adresse: </label>
+                        <input type="text" id="adresse" placeholder="Entrer l'adresse de votre structure" name="adresse"/>
+                    </p>
+                    <p>
+                        <label for="dept"> Departement: </label>
+                        <input type="text" id="dept" placeholder="Entrer le departement" name="dept"/>
+                    </p>
+                    <p>
+                        <label for="ville"> Ville: </label>
+                        <input type="text" id="ville" placeholder="Entrer la ville de votre structure" name="ville"/>
+                    </p>
+                    <p>
+                        <label for="telephone"> Téléphone: </label>
+                        <input type="tel" id="telephone" placeholder="Entrer un numero de telephone" name="telephone"/>
+                    </p>
+                    <p>
+                        <label for="email"> E-mail*: </label>
+                        <input type="email" id="email" placeholder="Entrer un E-mail" name="email"/>
+                    </p>
+                </fieldset>
+            </section>
+
+            <section class="identifiants">
+                <fieldset>
+                    <legend>Vos identifiants</legend>
+                    <p class="numsiret">
+                        <label for="siret">Siret*:</label>
+                        <input type="text" id="siret" placeholder="Entrer votre numero de siret" name="siret"/>
+                    </p>
+
+                    <p class="mdp">
+                        <label for="password">Mot de passe*:</label>
+                        <input id="password" type="password" placeholder="Entrer votre mot de passe" name="mdp"/>
+                    </p>
+                </fieldset>
+            </section>
+
+            <div class="submit-btn-div">
+                <input type="submit" value="Envoyer" class="submit-btn submit-btn-partenaires">
+            </div>
+        </form>
+    </section>
+
+{% endblock %}
+

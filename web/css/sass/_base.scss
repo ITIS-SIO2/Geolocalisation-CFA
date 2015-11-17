@@ -1,0 +1,45 @@
+$blue : #27246a;
+$gray : #a7a9ab;
+$fs : 15px;
+$section-h : 350px;
+$section-w : 300px;
+
+
+@mixin submit-btn($color, $hoverColor, $w){
+  height: 45px;
+  width: $w;
+  display: inline-block;
+  border: 0px;
+  outline: 0px;
+  font-weight: bolder;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  color: $blue;
+  font-size: $fs;
+  line-height: 45px;
+  background-color: $color;
+  text-decoration: none;
+  &:hover {
+    color: #d3d4d4;
+    background-color: $hoverColor;
+    //background-color: #274598;
+  }
+}
+
+@mixin section-header($color1, $color2){
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  color: #d3d4d4;
+  line-height: 50px;
+  font-size: $fs + 5;
+  text-align: center;
+  text-transform: uppercase;
+  background-image: linear-gradient($color1, $color2);
+}
+
+
+html, body {
+  background-color: $gray;
+}

@@ -1,5 +1,5 @@
 @import "compass";
-@import "../../base/sass/base.scss";
+@import "../../sass/base";
 
 .section-container {
   height: $section-h;
@@ -7,6 +7,7 @@
   position: absolute;
   top: 0; bottom: 0; left: 0; right: 0;
   margin: auto;
+
   section {
     width: $section-w;
     height: $section-h;
@@ -70,6 +71,9 @@
     }
 
   }
+
+
+
   .partenaires {
     h1{
       @include section-header(#7084bc, #030798)
@@ -85,5 +89,6 @@
       @include section-header(#65b68b, #02703f);
     }
   }
+
 
 }

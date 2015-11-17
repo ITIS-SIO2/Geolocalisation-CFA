@@ -1,11 +1,12 @@
 @import "compass";
-@import "../../../base/sass/base.scss";
+@import "../../../sass/base";
 
 
 section.entreprises {
   height: 1000px;
   width: $section-w*3;
   margin: 60px auto;
+  cursor: default;
   background-color: #a7a9ab;
   -webkit-border-radius: 0 0 10px 10px;
   -moz-border-radius: 0 0 10px 10px;
