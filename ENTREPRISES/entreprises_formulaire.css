@@ -1,4 +1,13 @@
-.depose-offre-container /* Section */
+p
+{
+    color: #4f4a7d;
+    font-family: arial, verdana, sans-serif;
+    font-size: small;
+    font-weight: bold;
+}
+
+/* Section */
+.depose-offre-container
 {
     background-color: #cccdcf;
     width: 700px;
@@ -7,7 +16,9 @@
     -moz-border-radius: 0 0 10px 10px;
     border-radius: 0 0 10px 10px;
 }
-.depose-offre-header /* Autour du titre */
+
+/* Autour du titre */
+.depose-offre-header
 {
     width: 100%;
     height: 50px;
@@ -20,26 +31,36 @@
     color: #e2e9eb;
     margin-top: 0%;
 }
-h1 /* Titre */
+
+/* Titre */
+h1
 {
     color: #d3d4d4;
     text-align: center;
 }
-h1:hover /* En pointant sur le titre */
+
+/* En pointant sur le titre */
+h1:hover
 {
     background: url("images/depose_offre_header2.png");
 }
-.block_haut /* Zones de saisie */
+
+/* Zones de saisie */
+.block_haut
 {
     width: 700px;
     border: 1px solid transparent;
     margin: 0 auto;
 }
-.block_gauche /* Partie gauche des zones de saisie */
+
+/* Partie gauche des zones de saisie */
+.block_gauche
 {
     margin-left: 30px;
 }
-.block_droit /* Partie droite des zones de saisie */
+
+/* Partie droite des zones de saisie */
+.block_droit
 {
     margin-left: 60px;
 }
@@ -50,15 +71,21 @@ h1:hover /* En pointant sur le titre */
     border: groove transparent;
     text-align: left;
 }
-.radio1 /* Boutons radio du haut */
+
+/* Boutons radio du haut */
+.radio1
 {
     margin-left: 20px;
 }
-.descriptif /* Titre de la zone de texte */
+
+/* Titre de la zone de texte */
+.descriptif
 {
     text-align: center;
 }
-.block_bas-superieur /* Zone de texte */
+
+/* Zone de texte */
+.block_bas-superieur
 {
     text-align: center;
     width: 700px;
@@ -72,14 +99,18 @@ textarea
     height: 80px;
     margin: 0 auto;
 }
-.attention /* Note en rouge */
+
+/* Note en rouge */
+.attention
 {
     color: #ed1c24;
     font-size: small;
     font-family: serif;
     margin-right: 180px;
 }
-.block_bas-inferieur /* Questions */
+
+/* Questions */
+.block_bas-inferieur
 {
     text-align: left;
     width: 650px;
@@ -88,12 +119,16 @@ textarea
     line-height: 0px;
     border: 1px solid transparent;
 }
-.radio2 /* Boutons radio du bas */
+
+/* Boutons radio du bas */
+.radio2
  {
      margin-left: 30px;
      padding-bottom: 10px;
  }
-.bouton_envoi /* Div du bouton envoyer */
+
+/* Div du bouton envoyer */
+.bouton_envoi
 {
     text-align: center;
     border: groove transparent;
@@ -101,13 +136,7 @@ textarea
     margin: 0 auto;
     padding-bottom: 15px;
 }
-p
-{
-    color: #4f4a7d;
-    font-family: arial, verdana, sans-serif;
-    font-size: small;
-    font-weight: bold;
-}
+
 
 
 

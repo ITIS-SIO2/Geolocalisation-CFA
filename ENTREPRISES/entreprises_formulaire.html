@@ -66,19 +66,22 @@
                         <!-- Il faudra à l'avenir rendre ce champ obligatoire et y ajouter une indication de saisie-->
                         <p><label for="formation">Formation* : </label></p>
                             <select id="formation" name="formation">
-                                <option value="vide"></option>
-                                <option value="cap_instal_sanitaire">CAP INSTALLATEUR SANITAIRE</option>
-                                <option value="cap_instal_thermique_cd1">CAP INSTALLATEUR THERMIQUE</option>
-                                <option value="cap_instal_thermique_cd2">CAP INSTALLATEUR THERMIQUE</option>
-                                <option value="cap_macon">CAP MACON </option>
-                                <option value="cap_menuis_fab">CAP MENUISIER FABRICANT</option>
-                                <option value="cap_menuis_instal">CAP MENUISIER INSTALLATEUR</option>
-                                <option value="cap_peintre_applirevet">CAP PEINTRE APPLI DE REVETEMENT</option>
-                                <option value="cap_pro_elec">CAP PRO ELEC</option>
-                                <option value="cap_serrurier_metal">CAP SERRURIER METALLIER</option>
-                                <option value="cap_staff_ornemaniste">CAP STAFFEUR ORNEMANISTE</option>
-                                <option value="dima">DIMA</option>
-                                <option value="mc_plaquiste">MC PLAQUISTE</option>
+                                <optgroup label="Séléctionner une formation :">
+                                    <option value="vide"></option>
+                                    <option value="cap_instal_sanitaire">CAP INSTALLATEUR SANITAIRE</option>
+                                    <option value="cap_instal_thermique_cd1">CAP INSTALLATEUR THERMIQUE</option>
+                                    <option value="cap_instal_thermique_cd2">CAP INSTALLATEUR THERMIQUE</option>
+                                    <option value="cap_macon">CAP MACON </option>
+                                    <option value="cap_menuis_fab">CAP MENUISIER FABRICANT</option>
+                                    <option value="cap_menuis_instal">CAP MENUISIER INSTALLATEUR</option>
+                                    <option value="cap_peintre_applirevet">CAP PEINTRE APPLI DE REVETEMENT</option>
+                                    <option value="cap_pro_elec">CAP PRO ELEC</option>
+                                    <option value="cap_serrurier_metal">CAP SERRURIER METALLIER</option>
+                                    <option value="cap_staff_ornemaniste">CAP STAFFEUR ORNEMANISTE</option>
+                                    <option value="dima">DIMA</option>
+                                    <option value="mc_plaquiste">MC PLAQUISTE</option>
+                                </optgroup>
+
                             </select>
 
                         <p><label for="nombre_apprentis">Nombre d'apprentis* : </label></p>
@@ -89,11 +92,11 @@
 
                         <p class="radio1">
                             <label for="semaine">Semaine(s)</label>
-                            <input type="radio" id="semaine" name="type_duree" required>
+                            <input type="radio" id="semaine" name="type_duree" value="semaine(s)" required>
                             <label for="mois">Mois</label>
-                            <input type="radio" id="mois" name="type_duree">
+                            <input type="radio" id="mois" name="type_duree" value="mois">
                             <label for="annee">Année(s)</label>
-                            <input type="radio" id="annee" name="type_duree">
+                            <input type="radio" id="annee" name="type_duree" value="année(s)">
                         </p>
 
                 </div>
@@ -126,9 +129,9 @@
                     <p>Souhaitez-vous gérer votre recrutement de façon autonome et ne pas communiquer vos coordonnées ?</p>
                         <p class="radio2">
                             <label for="oui">Oui</label>
-                            <input type="radio" id="oui" name="recrutement_autonome" value="oui">
+                            <input type="radio" id="oui" name="recrutement_autonome" value="oui" checked="checked">
                             <label for="non">Non</label>
-                            <input type="radio" id="non" name="recrutement_autonome" value ="non" checked="checked">
+                            <input type="radio" id="non" name="recrutement_autonome" value ="non">
                         </p>
 
                 </div>
