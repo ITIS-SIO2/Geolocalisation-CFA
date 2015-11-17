@@ -2,25 +2,31 @@
 
 <html lang="fr">
 
-    <head> <!-- EN TETE -->
+<!-- EN TETE -->
+    <head>
 
-        <meta charset="UTF-8">
+        <meta http-equiv="content-type" content="text/html" charset="UTF-8">
         <link rel="stylesheet" href="entreprises_formulaire.css" />
         <title>Déposer une offre</title>
 
     </head>
+<!-- CORPS -->
+    <body>
 
-    <body> <!-- CORPS -->
-
+    <!-- Cadre de la page-->
         <section class="depose-offre-container">
 
-            <h1 class="depose-offre-header">DEPOSER UNE OFFRE</h1>  <!-- TITRE DYNAMIQUE-->
+            <!-- TITRE DYNAMIQUE-->
+            <h1 class="depose-offre-header">DEPOSER UNE OFFRE</h1>
 
-            <form action="traitement_offre.php" method="post"> <!-- FORMULAIRE -->
+            <!-- FORMULAIRE -->
+            <form action="entreprises_traitement.php" method="post">
 
-                <div class="block_haut"> <!-- ZONES DE SAISIE-->
+                <!-- ZONES DE SAISIE-->
+                <div class="block_haut">
 
-                    <div class="block_gauche"> <!-- PARTIE GAUCHE -->
+                    <!-- PARTIE GAUCHE -->
+                    <div class="block_gauche">
 
                         <p><label for="societe">Société* : </label></p>
                         <p><input type="text" size="35" id="societe" name="societe" placeholder="Entrer le nom de votre société" autofocus required></p>
@@ -32,10 +38,10 @@
                         <p><input type="text" size="35" id="prenom" name="prenom" placeholder="Entrer votre prénom"></p>
 
                         <p><label for="telephone">Téléphone : </label></p>
-                        <p><input type="tel" size="35" id="telephone" name="telephone" maxlenght="10" placeholder="Entrer votre téléphone"></p>
+                        <p><input type="tel" size="35" id="telephone" name="telephone" placeholder="Entrer votre téléphone"></p>
 
                         <p><label for="fax">Fax : </label></p>
-                        <p><input type="tel" size="35" id="fax" name="fax" maxlenght="10" placeholder="Entrer votre fax"></p>
+                        <p><input type="tel" size="35" id="fax" name="fax" placeholder="Entrer votre fax"></p>
 
                         <p><label for="email">E-mail* : </label></p>
                         <p><input type="email" size="35" id="email" name="email" placeholder="Entrer votre e-mail" required></p>
@@ -45,7 +51,8 @@
 
                     </div>
 
-                    <div class="block_droit"> <!-- PARTIE DROITE -->
+                    <!-- PARTIE DROITE -->
+                    <div class="block_droit">
 
                         <p><label for="adresse">Adresse : </label></p>
                         <p><input type="text" size="35" id="adresse" name="adresse" placeholder="Entrer votre adresse"></p>
@@ -56,7 +63,8 @@
                         <p><label for="ville">Ville* : </label></p>
                         <p><input type="text" size="35" id="ville" name="ville" placeholder="Entrer votre ville" required></p>
 
-                        <p><label for="formation">Formation : </label></p> <!-- Il faudra rendre ce champ obligatoire et y ajouter une indication de saisie-->
+                        <!-- Il faudra à l'avenir rendre ce champ obligatoire et y ajouter une indication de saisie-->
+                        <p><label for="formation">Formation* : </label></p>
                             <select id="formation" name="formation">
                                 <option value="vide"></option>
                                 <option value="cap_instal_sanitaire">CAP INSTALLATEUR SANITAIRE</option>
@@ -73,8 +81,8 @@
                                 <option value="mc_plaquiste">MC PLAQUISTE</option>
                             </select>
 
-                        <p><label for="nb_apprentis">Nombre d'apprentis* : </label></p>
-                        <p><input type="number" style="width: 275px;" min="0" max="100" id="nb_apprentis" name="nb_apprentis" placeholder="Entrer le nombre d'apprentis" required></p>
+                        <p><label for="nombre_apprentis">Nombre d'apprentis* : </label></p>
+                        <p><input type="number" style="width: 275px;" min="0" max="100" id="nombre_apprentis" name="nombre_apprentis" placeholder="Entrer le nombre d'apprentis" required></p>
 
                         <p><label for="duree_formation">Durée de la formation* : </label></p>
                         <p><input type="number" style="width: 275px;" min="1" max="100" id="duree_formation" name="duree_formation" placeholder="Entrer la durée de la formation" required></p>
@@ -92,7 +100,8 @@
 
                 </div>
 
-                <div class="block_bas-superieur"> <!-- ZONE DE TEXTE -->
+                <!-- ZONE DE TEXTE -->
+                <div class="block_bas-superieur">
 
                     <p class="descriptif"><label for="descriptif_formation">Descriptif de la formation* :</label></p>
                     <p><textarea name="descriptif_formation" id="descriptif_formation" required></textarea></p>
@@ -101,14 +110,15 @@
 
                 </div>
 
-                <div class="block_bas-inferieur"> <!-- QUESTIONS -->
+                <!-- QUESTIONS -->
+                <div class="block_bas-inferieur">
 
                     <p>Souhaitez-vous être mis en relation avec les candidats ?</p>
                         <p class="radio2">
                             <label for="oui">Oui</label>
-                            <input type="radio" id="oui" name="mise_en_relation">
+                            <input type="radio" id="oui" name="contact_candidats" value="oui" checked="checked">
                             <label for="non">Non</label>
-                            <input type="radio" id="non" name="mise_en_relation">
+                            <input type="radio" id="non" name="contact_candidats" value ="non">
                         </p>
 
                     <br />
@@ -116,20 +126,21 @@
                     <p>Souhaitez-vous gérer votre recrutement de façon autonome et ne pas communiquer vos coordonnées ?</p>
                         <p class="radio2">
                             <label for="oui">Oui</label>
-                            <input type="radio" id="oui" name="recrutement_autonome">
+                            <input type="radio" id="oui" name="recrutement_autonome" value="oui">
                             <label for="non">Non</label>
-                            <input type="radio" id="non" name="recrutement_autonome">
+                            <input type="radio" id="non" name="recrutement_autonome" value ="non" checked="checked">
                         </p>
 
                 </div>
 
-                <div class="bouton_envoi"> <!-- BOUTON D'ENVOI -->
+                <!-- BOUTON D'ENVOI -->
+                <div class="bouton_envoi">
                     <input type="image" src="images/bouton-envoyer.png">
                 </div>
 
             </form>
 
-        </section> <!-- Cadre de la page-->
+        </section>
 
     </body>
 

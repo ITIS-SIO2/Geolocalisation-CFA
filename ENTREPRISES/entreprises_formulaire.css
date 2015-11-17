@@ -93,7 +93,7 @@ textarea
      margin-left: 30px;
      padding-bottom: 10px;
  }
-.bouton_envoi /* Bouton envoyer */
+.bouton_envoi /* Div du bouton envoyer */
 {
     text-align: center;
     border: groove transparent;
