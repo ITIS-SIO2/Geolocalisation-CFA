@@ -1,4 +1,4 @@
-/* line 31, ../sass/_base.scss */
+/* line 43, ../sass/_base.scss */
 html, body {
   background-color: #a7a9ab;
 }
@@ -26,7 +26,7 @@ html, body {
 
 /* line 22, ../sass/screen.scss */
 .main-content {
-  height: 700px;
+  min-height: 800px;
   background: url("../../../images/MGB.JPG") no-repeat center center;
   -webkit-background-size: cover;
   background-size: cover;

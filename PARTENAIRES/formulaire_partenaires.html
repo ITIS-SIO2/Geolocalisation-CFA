@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <link rel="stylesheet"  href="formulaire_partenaires.css">
+
+    <title>Nouveau Partenaire</title>
+</head>
+<body>
+<form action="traitement.php" method="post">
+    <section>
+        <h1>Nouveau Partenaire</h1>
+        <div id="vous">
+            <fieldset>
+                <legend>Vous</legend>
+
+                    <p><label for="nom">Nom : </label></p>
+                    <p><input type="text" id="nom" placeholder="Entrer votre nom" name="nom"/></p>
+
+                    <p><label for="prenom">Prénom : </label></p>
+                    <p><input type="text" id="prenom" placeholder="Entrer votre prénom" name="prenom"/></p>
+
+                    <p><label for="fonction">Fonction: </label></p>
+                    <p><input type="text" id="fonction" placeholder="Entrer votre fonction" name="fonction"/></p>
+
+            </fieldset>
+        </div>
+
+        <div id="structure">
+            <fieldset>
+                <legend>Structure</legend>
+                    <p><label for="nom1"> Raison Social: </label></p>
+                    <p><input type="text" id="nom1" placeholder="Entrer le nom de votre structure" name="raison"/></p>
+
+                    <p><label for="adresse"> Adresse: </label></p>
+                    <p><input type="text" id="adresse" placeholder="Entrer l'adresse de votre structure" name="adresse"/></p>
+
+                    <p><label for="dept"> Departement: </label></p>
+                    <p><input type="text" id="dept" placeholder="Entrer le departement" name="dept"/></p>
+
+                    <p><label for="ville"> Ville: </label></p>
+                    <p><input type="text" id="ville" placeholder="Entrer la ville de votre structure" name="ville"/></p>
+
+                    <p><label for="telephone"> Téléphone: </label></p>
+                    <p><input type="tel" id="telephone" placeholder="Entrer un numero de telephone" name="telephone"/></p>
+
+                    <p><label for="email"> E-mail*: </label></p>
+                    <p><input type="email" id="email" placeholder="Entrer un E-mail" name="email"/></p>
+
+            </fieldset>
+        </div>
+
+        <div id="identifiants">
+            <fieldset>
+                <legend>Identifiants</legend>
+                <div id="numsiret">
+                    <p><label for="siret">Siret*:</label></p>
+                    <p><input type="text" id="siret" placeholder="Entrer votre numero de siret" name="siret"/></p>
+                </div>
+
+                <div id="mdp">
+                    <p><label for="password">Mot de passe*:</label></p>
+                    <p><input id="password" type="password" placeholder="Entrer votre mot de passe" name="mdp"/></p>
+                </div>
+            </fieldset>
+        </div>
+
+
+        <div id="devenir">
+            <p><input type="submit"  value="Devenir Partenaire"></p>
+        </div>
+
+    </section>
+</form>
+<script type="text/javascript" src="zkJS.1.0.js"></script>
+<script>
+    $("#nom").control("text", "input", function(){
+        console.log(this);
+        if(this.state){
+            this.node.addStyle("background-color", "green");
+        } else {
+            this.node.addStyle("background-color", "red");
+        }
+    });
+    $("#prenom").control("text", "input", function(){
+        console.log(this);
+        if(this.state){
+            this.node.addStyle("background-color", "green");
+        } else {
+            this.node.addStyle("background-color", "red");
+        }
+    });
+    $("#fonction").control("text", "input", function(){
+        console.log(this);
+        if(this.state){
+            this.node.addStyle("background-color", "green");
+        } else {
+            this.node.addStyle("background-color", "red");
+        }
+    });
+    $("#raison").control("text", "input", function(){
+        console.log(this);
+        if(this.state){
+            this.node.addStyle("background-color", "green");
+        } else {
+            this.node.addStyle("background-color", "red");
+        }
+    });
+    $("#adresse").control("text", "input", function(){
+        console.log(this);
+        if(this.state){
+            this.node.addStyle("background-color", "green");
+        } else {
+            this.node.addStyle("background-color", "red");
+        }
+    });
+
+    $("#dept").control("number", "input", function(){
+        console.log(this);
+        if(this.state){
+            this.node.addStyle("background-color", "green");
+        } else {
+            this.node.addStyle("background-color", "red");
+        }
+    });
+
+    $("#ville").control("text", "input", function(){
+        console.log(this);
+        if(this.state){
+            this.node.addStyle("background-color", "green");
+        } else {
+            this.node.addStyle("background-color", "red");
+        }
+    });
+
+    $("telephone").control("tel", "input", function(){
+        console.log(this);
+        if(this.state){
+            this.node.addStyle("background-color", "green");
+        } else {
+            this.node.addStyle("background-color", "red");
+        }
+    });
+
+    $("email").control("email", "input", function(){
+        console.log(this);
+        if(this.state){
+            this.node.addStyle("background-color", "green");
+        } else {
+            this.node.addStyle("background-color", "red");
+        }
+    });
+
+    $("siret").control("/^\d"[14], "input", function(){
+        console.log(this);
+        if(this.state){
+            this.node.addStyle("background-color", "green");
+        } else {
+            this.node.addStyle("background-color", "red");
+        }
+    });
+
+    $("mdp").control("text", "input", function(){
+        console.log(this);
+        if(this.state){
+            this.node.addStyle("background-color", "green");
+        } else {
+            this.node.addStyle("background-color", "red");
+        }
+    });
+    </script>
+</body>
+</html>

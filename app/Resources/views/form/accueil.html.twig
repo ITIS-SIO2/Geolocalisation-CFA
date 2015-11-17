@@ -25,7 +25,7 @@
                     <input type="submit" value="Connexion" class="submit-btn submit-btn-partenaires">
                 </div>
                 <div class="inscription-div">
-                    <a href="#">Devenir partenaire</a>
+                    <a href="{{ path('new_partenaire') }}">Devenir partenaire</a>
                 </div>
             </form>
         </section>
@@ -33,7 +33,7 @@
         <section class="entreprises">
             <h1>Entreprises</h1>
             <div class="submit-btn-div">
-                <a href="#" class="submit-btn submit-btn-entreprises">Déposer une offre</a>
+                <a href="{{ path('deposer_offre') }}" class="submit-btn submit-btn-entreprises">Déposer une offre</a>
             </div>
         </section>
 

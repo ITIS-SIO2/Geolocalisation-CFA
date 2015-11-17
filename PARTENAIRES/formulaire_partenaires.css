@@ -1,0 +1,196 @@
+html{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+h1
+{
+    height: 50px;
+    width: 100% ;
+    margin: 0;
+    padding: 0;
+    background: url(nouveau_partenaire_header.png) no-repeat center center  ;
+    color: rgb(211,212,212);
+    text-align: center;
+    line-height: 50px;
+
+
+}
+
+#vous, #structure
+{
+    display: block;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+}
+
+#numsiret, #mdp
+{
+
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0px;
+
+}
+
+section
+{
+    width: 700px;
+    height: 750px;
+    /*background-image: url(nouveau_partenaire_header.png);*/
+    background-repeat: no-repeat;
+    font-size: 0.9em;
+    font-family: 'Arial';
+    background-color: rgb(204, 205, 207);
+    border-radius: 10px;
+    margin-left: 350px;
+}
+
+#vous p
+{
+
+    color: rgb(39, 37, 107);
+    font-size: 12px;
+    font-weight: bolder;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#vous fieldset
+{
+    display: block;
+    margin-top: 10px;
+    margin-left: -3px;
+    margin-right: 0px;
+    /*padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0.75em;*/
+    border: 5px solid;
+    border-color: rgb(167, 170,171);
+    height: 420px;
+}
+
+legend {
+    border: none;
+    background-color: rgb(147, 149, 152);
+    font-size: 18px;
+    font-weight: bolder;
+    color: rgb(39, 37, 107);
+    height: 25px;
+    width: 200px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+#identifiants legend{
+
+    margin-left: 230px;
+}
+
+
+
+#structure p
+{
+
+    color: rgb(39, 37, 107);
+    font-size: 12px;
+    font-weight: bolder;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#structure fieldset
+{
+
+    display: block;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 5px;
+    border: 5px solid;
+    border-color: rgb(167, 170,171);
+    height: 420px;
+}
+
+
+#identifiants p
+{
+
+    color: rgb(39, 37, 107);
+    font-size: 12px;
+    font-weight: bolder;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#identifiants input
+{
+
+    margin-left: 0px;
+    width: 250px;
+    height: 20px;
+
+}
+
+#identifiants fieldset
+{
+    display: block;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0.75em;
+    border: 5px solid;
+    border-color: rgb(167, 170,171);
+}
+
+#numsiret
+{
+    margin-left: 10px;
+}
+
+#mdp
+{
+    margin-left: 50px;
+}
+
+#devenir fieldset
+{
+    display: block;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0.75em;
+    border: none;
+    margin-left: 400px;
+}
+
+#devenir input
+{
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left:250px;
+    background-color: #5183bf;
+    border: 0px;
+    outline: 0px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 50px;
+    
+}
+
+section input
+{
+    height:20px;
+    width: 270px;
+}

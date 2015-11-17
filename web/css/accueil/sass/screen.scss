@@ -1,5 +1,5 @@
 @import "compass";
-@import "../../base/sass/base";
+@import "../../base/sass/base.scss";
 
 .section-container {
   height: $section-h;
@@ -49,6 +49,7 @@
         //position: absolute;
         //right: 0;
       }
+
     }
     div.submit-btn-div {
       margin: 40px 15px;

@@ -10,3 +10,6 @@
 /vendor/
 /web/bundles/
 /SAUVEGARDE/Github.txt
+/.idea
+/README.md
+/.gitignore

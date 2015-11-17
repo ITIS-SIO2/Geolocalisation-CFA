@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="entreprises_formulaire.css" />
+    <title>Déposer une offre</title>
+</head>
+
+<body>
+
+    <section class="depose-offre-container">
+    <h1 class="depose-offre-header">DEPOSER UNE OFFRE</h1>
+
+    <form action="traitement_offre.php" method="post">
+        <div class="block_haut">
+            <div class="block_gauche">
+                <p><label for="societe">Société* : </label></p>
+                <p><input type="text" size="35" id="societe" name="societe" placeholder="Entrer le nom de votre société" autofocus required></p>
+
+                <p><label for="nom">Nom : </label></p>
+                <p><input type="text" size="35" id="nom" name="nom" placeholder="Entrer votre nom"></p>
+
+                <p><label for="prenom">Prénom : </label></p>
+                <p><input type="text" size="35" id="prenom" name="prenom" placeholder="Entrer votre prénom"></p>
+
+                <p><label for="telephone">Téléphone : </label></p>
+                <p><input type="tel" size="35" id="telephone" name="telephone" maxlenght="10" placeholder="Entrer votre téléphone"></p>
+
+                <p><label for="fax">Fax : </label></p>
+                <p><input type="tel" size="35" id="fax" name="fax" maxlenght="10" placeholder="Entrer votre fax"></p>
+
+                <p><label for="email">E-mail* : </label></p>
+                <p><input type="email" size="35" id="email" name="email" placeholder="Entrer votre e-mail" required></p>
+
+                <p><label for="fonction">Fonction : </label></p>
+                <p><input type="text" size="35" id="fonction" name="fonction" placeholder="Entrer votre fonction"></p>
+            </div>
+
+            <div class="block_droit">
+                <p><label for="adresse">Adresse : </label></p>
+                <p><input type="text" size="35" id="adresse" name="adresse" placeholder="Entrer votre adresse"></p>
+
+                <p><label for="code_postal">Code postal* : </label></p>
+                <p><input type="text" size="35" id="code_postal" name="code_postal" maxlenght="5" placeholder="Entrer votre code postal" required></p>
+
+                <p><label for="ville">Ville* : </label></p>
+                <p><input type="text" size="35" id="ville" name="ville" placeholder="Entrer votre ville" required></p>
+
+                <p><label for="formation">Formation* : </label></p>
+                <select id="formation" name="formation" required>
+                    <option value="vide"></option>
+                    <option value="cap_instal_sanitaire">CAP INSTALLATEUR SANITAIRE</option>
+                    <option value="cap_instal_thermique_cd1">CAP INSTALLATEUR THERMIQUE</option>
+                    <option value="cap_instal_thermique_cd2">CAP INSTALLATEUR THERMIQUE</option>
+                    <option value="cap_macon">CAP MACON </option>
+                    <option value="cap_menuis_fab">CAP MENUISIER FABRICANT</option>
+                    <option value="cap_menuis_instal">CAP MENUISIER INSTALLATEUR</option>
+                    <option value="cap_peintre_applirevet">CAP PEINTRE APPLI DE REVETEMENT</option>
+                    <option value="cap_pro_elec">CAP PRO ELEC</option>
+                    <option value="cap_serrurier_metal">CAP SERRURIER METALLIER</option>
+                    <option value="cap_staff_ornemaniste">CAP STAFFEUR ORNEMANISTE</option>
+                    <option value="dima">DIMA</option>
+                    <option value="mc_plaquiste">MC PLAQUISTE</option>
+                </select>
+
+
+                <p><label for="nb_apprentis">Nombre d'apprentis* : </label></p>
+                <p><input type="number" style="width: 275px;" min="0" max="100" id="nb_apprentis" name="nb_apprentis" placeholder="Entrer le nombre d'apprentis" required></p>
+
+                <p><label for="duree_formation">Durée de la formation* : </label></p>
+                <p><input type="number" style="width: 275px;" min="1" max="100" id="duree_formation" name="duree_formation" placeholder="Entrer la durée de la formation" required></p>
+                <p class="radio1">
+                    <label for="semaine">Semaine(s)</label>
+                    <input type="radio" id="semaine" name="type_duree">
+                    <label for="mois">Mois</label>
+                    <input type="radio" id="mois" name="type_duree">
+                    <label for="annee">Année(s)</label>
+                    <input type="radio" id="annee" name="type_duree"></p>
+            </div>
+        </div>
+
+        <div class="block_bas-superieur">
+
+            <p class="descriptif">
+                <label for="descriptif_formation">Descriptif de la formation* :</label></p>
+            <p><textarea name="descriptif_formation" id="descriptif_formation" required></textarea></p>
+            <p class="attention"><strong>Attention: cette description sera visible par les candidats</strong></p>
+
+        </div>
+        <div class="block_bas-inferieur">
+
+            <p>Souhaitez-vous être mis en relation avec les candidats ?
+            <p class="radio2">
+                <label for="oui">Oui</label>
+                <input type="radio" id="oui" name="mise_en_relation">
+                <label for="non">Non</label>
+                <input type="radio" id="non" name="mise_en_relation">
+            </p>
+            </p>
+            <br />
+            <p>Souhaitez-vous gérer votre recrutement de façon autonome et ne pas communiquer vos coordonnées ?
+            <p class="radio2">
+                <label for="oui">Oui</label>
+                <input type="radio" id="oui" name="recrutement_autonome">
+                <label for="non">Non</label>
+                <input type="radio" id="non" name="recrutement_autonome">
+            </p>
+            </p>
+
+        </div>
+
+        <div class="bouton_envoi"><input type="image" src="image/bouton-envoyer.png"></div>
+
+        </div>
+
+
+
+    </form>
+</section>
+</body>
+</html>

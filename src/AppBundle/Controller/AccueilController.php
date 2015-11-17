@@ -13,7 +13,22 @@ class AccueilController extends Controller
      */
     public function indexAction()
     {
-        // replace this example code with whatever you need
         return $this->render('form/accueil.html.twig');
+    }
+
+    /**
+     * @Route("/nouveau/partenaire", name="new_partenaire")
+     */
+    public function newPartenaireAction()
+    {
+        return $this->render('form/new_partenaire.html.twig');
+    }
+
+    /**
+     * @Route("/deposer-offre", name="deposer_offre")
+     */
+    public function deposerOffreAction()
+    {
+        return $this->render('form/deposer_offre.html.twig');
     }
 }

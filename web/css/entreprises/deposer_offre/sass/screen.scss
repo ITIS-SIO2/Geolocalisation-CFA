@@ -1,0 +1,57 @@
+@import "compass";
+@import "../../../base/sass/base.scss";
+
+
+section.entreprises {
+  height: 1000px;
+  width: $section-w*3;
+  margin: 60px auto;
+  background-color: #a7a9ab;
+  -webkit-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+
+  h1{ @include section-header(#f2a677, #a33220) }
+
+  form {
+    margin: 0px 70px;
+    section {
+      width: 350px;
+      //border: 1px solid red;
+      * {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+      p { margin-top: 20px }
+      .radio-right {
+        margin: 0;
+        * { width: auto; }
+        input { margin-left: 20px;}
+      }
+    }
+    .container-left { float: left; }
+    .container-right { float: right; }
+    .container-bottom {
+      clear: both;
+      //border: 1px solid green;
+      width: 750px;
+      margin: auto;
+      .descriptif label { margin-top: 20px }
+      .warning { color: red; }
+      .radio-bottom-1, .radio-bottom-2 {
+        * { width: auto; }
+        input { margin-left: 20px;}
+      }
+      textarea { height: 200px; }
+    }
+    div.submit-btn-div {
+      text-align: center;
+      .submit-btn-entreprises {
+        @include submit-btn(#ea7d42, #a1311f, 150px);
+        margin-top: 25px;
+      }
+    }
+  }
+
+}

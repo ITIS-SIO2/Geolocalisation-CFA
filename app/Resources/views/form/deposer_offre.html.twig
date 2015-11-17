@@ -1,0 +1,117 @@
+{% extends "base.html.twig" %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/entreprises/deposer_offre/stylesheets/screen.css') }}">
+{% endblock %}
+
+{% block mainContent %}
+
+        <section class="entreprises">
+            <h1>Déposer une offre</h1>
+            <form action="#" method="post">
+                <section class="container-left">
+                    <p>
+                        <label for="societe">Société* : </label>
+                        <input type="text" size="35" id="societe" name="societe" placeholder="Entrer le nom de votre société" autofocus required>
+                    </p>
+                    <p>
+                        <label for="nom">Nom : </label>
+                        <input type="text" size="35" id="nom" name="nom" placeholder="Entrer votre nom">
+                    </p>
+                    <p>
+                        <label for="prenom">Prénom : </label>
+                        <input type="text" size="35" id="prenom" name="prenom" placeholder="Entrer votre prénom">
+                    </p>
+                    <p>
+                        <label for="telephone">Téléphone : </label>
+                        <input type="tel" size="35" id="telephone" name="telephone" maxlenght="10" placeholder="Entrer votre téléphone">
+                    </p>
+                    <p>
+                        <label for="fax">Fax : </label>
+                        <input type="tel" size="35" id="fax" name="fax" maxlenght="10" placeholder="Entrer votre fax">
+                    </p>
+                    <p>
+                        <label for="email">E-mail* : </label>
+                        <input type="email" size="35" id="email" name="email" placeholder="Entrer votre e-mail" required>
+                    </p>
+                    <p>
+                        <label for="fonction">Fonction : </label>
+                        <input type="text" size="35" id="fonction" name="fonction" placeholder="Entrer votre fonction">
+                    </p>
+
+                </section>
+                <section class="container-right">
+                    <p>
+                        <label for="adresse">Adresse : </label>
+                        <input type="text" size="35" id="adresse" name="adresse" placeholder="Entrer votre adresse">
+                    </p>
+                    <p>
+                        <label for="code_postal">Code postal* : </label>
+                        <input type="text" size="35" id="code_postal" name="code_postal" maxlenght="5" placeholder="Entrer votre code postal" required>
+                    </p>
+                    <p>
+                        <label for="ville">Ville* : </label>
+                        <input type="text" size="35" id="ville" name="ville" placeholder="Entrer votre ville" required>
+                    </p>
+                    <p>
+                        <label for="formation">Formation* : </label>
+                        <select id="formation" name="formation" required>
+                            <option value="cap_instal_sanitaire">CAP INSTALLATEUR SANITAIRE</option>
+                            <option value="cap_instal_thermique_cd1">CAP INSTALLATEUR THERMIQUE</option>
+                            <option value="cap_instal_thermique_cd2">CAP INSTALLATEUR THERMIQUE</option>
+                            <option value="cap_macon">CAP MACON </option>
+                            <option value="cap_menuis_fab">CAP MENUISIER FABRICANT</option>
+                            <option value="cap_menuis_instal">CAP MENUISIER INSTALLATEUR</option>
+                            <option value="cap_peintre_applirevet">CAP PEINTRE APPLI DE REVETEMENT</option>
+                            <option value="cap_pro_elec">CAP PRO ELEC</option>
+                            <option value="cap_serrurier_metal">CAP SERRURIER METALLIER</option>
+                            <option value="cap_staff_ornemaniste">CAP STAFFEUR ORNEMANISTE</option>
+                            <option value="dima">DIMA</option>
+                            <option value="mc_plaquiste">MC PLAQUISTE</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="nb_apprentis">Nombre d'apprentis* : </label>
+                        <input type="number" id="nb_apprentis" name="nb_apprentis" placeholder="Entrer le nombre d'apprentis" required>
+                    </p>
+                    <p>
+                        <label for="duree_formation">Durée de la formation* : </label>
+                        <input type="number" name="duree_formation" placeholder="Entrer la durée de la formation" required>
+                    </p>
+                    <p class="radio-right">
+                        <input type="radio" id="mois" name="type_duree"><label for="mois">Mois</label>
+                        <input type="radio" id="annee" name="type_duree"><label for="annee">Année(s)</label>
+                    </p>
+
+
+                </section>
+                <section class="container-bottom">
+                    <p class="descriptif">
+                        <label for="descriptif_formation">Descriptif de la formation* :</label>
+                        <textarea name="descriptif_formation" id="descriptif_formation" required></textarea>
+                        <span class="warning">Attention: cette description sera visible par les candidats</span>
+                    </p>
+                    <p class="radio-bottom-1">
+                        <label for="">Souhaitez-vous être mis en relation avec les candidats ?</label><br>
+                        <input type="radio" id="oui1" name="mise_en_relation">
+                        <label for="oui1">Oui</label>
+                        <input type="radio" id="non1" name="mise_en_relation">
+                        <label for="non1">Non</label>
+                    </p>
+                    <p class="radio-bottom-2">
+                        <label for="">Souhaitez-vous gérer votre recrutement de façon autonome et ne pas communiquer vos coordonnées ?</label><br>
+                        <input type="radio" id="oui2" name="recrutement_autonome">
+                        <label for="oui2">Oui</label>
+                        <input type="radio" id="non2" name="recrutement_autonome">
+                        <label for="non2">Non</label>
+                    </p>
+                </section>
+                <div class="submit-btn-div">
+                    <input type="submit" value="Envoyer" class="submit-btn submit-btn-entreprises">
+                </div>
+            </form>
+        </section>
+
+{% endblock %}
+
